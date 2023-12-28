@@ -1,0 +1,6 @@
+1.npm init, npm install modules etc
+2. export import
+3. os_modules
+4. path_modules
+5. file system modules
+6. ES6 syntax

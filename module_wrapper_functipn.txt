@@ -1,0 +1,8 @@
+In Node.js, every file is considered a module, and Node.js automatically wraps each module in what is known as the "module wrapper function." This module wrapper function provides a private scope for the code within the module, allowing variables and functions declared in the module to be local to that module by default. This feature helps to avoid variable and function name clashes between different modules in the application.
+
+The module wrapper function has the following structure:
+
+(function(exports, require, module, __filename, __dirname) {
+  // Your module code is placed here
+  // Any variables or functions declared here are local to this module
+});

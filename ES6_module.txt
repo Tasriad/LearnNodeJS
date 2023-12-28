@@ -1,0 +1,53 @@
+"ES6 module" or "ECMAScript 2015 module"
+ES6 (ECMAScript 2015) introduced a standardized way to organize and share code between JavaScript files by using "modules." Prior to ES6, developers used various techniques (like IIFE - Immediately Invoked Function Expressions) to achieve a similar goal, but ES6 modules provide a more standardized and powerful approach.
+
+ES6 modules offer a clean and straightforward syntax for exporting and importing code between different files. This helps in keeping code modular, organized, and easier to maintain. Modules are particularly useful in larger applications where code organization and separation of concerns are crucial.
+
+Here's a brief overview of how ES6 modules work:
+
+Exporting from a module:
+In a JavaScript file, you can export variables, functions, or classes using the export keyword. There are two ways to export:
+
+1.Named Exports: You can export individual items by name.
+
+// Example: Exporting named items
+code
+[
+    export const variableName = value;
+    export function functionName() { ... }
+    export class ClassName { ... }
+]
+
+2.Default Export: You can export a single "default" item from a module
+
+// Example: Exporting a default item
+code
+[
+    export default someValue;
+]
+
+Importing in a module:
+In another JavaScript file, you can import the exported items using the import keyword. There are various ways to import:
+
+3.Named Imports: Import specific named items.
+// Example: Importing specific named items
+code
+[
+    import { variableName, functionName } from './path/to/module';
+]
+
+4.Import Everything: Import all named items as an object.
+// Example: Importing all named items as an object
+code
+[
+    import * as myModule from './path/to/module';
+]
+
+5.Default Import: Import the default exported item.
+// Example: Importing the default item
+code
+[
+    import someValue from './path/to/module';
+]
+
+ES6 modules are widely supported in modern JavaScript environments, making it the preferred way to manage dependencies and share code between different files in modern JavaScript development. However, when working in Node.js, you might need to use the CommonJS syntax (require and module.exports) or a transpiler like Babel to use ES6 modules in Node.js before the native support was introduced. Nowadays, Node.js also supports native ES6 modules with the import and export syntax.
